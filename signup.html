@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School Sign Up</title>
+    <link rel="stylesheet" href="signup.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <form class="signup-form" id="signupForm">
+            <h1>School Registration</h1>
+            
+            <!-- School Name -->
+            <div class="form-group">
+                <input type="text" id="schoolName" name="schoolName" required>
+                <label for="schoolName" class="placeholder">School Name</label>
+            </div>
+
+            <!-- School Email -->
+            <div class="form-group">
+                <input type="email" id="schoolEmail" name="schoolEmail" required>
+                <label for="schoolEmail" class="placeholder">School Email</label>
+            </div>
+
+            <!-- School Motto -->
+            <div class="form-group">
+                <input type="text" id="schoolMotto" name="schoolMotto" required>
+                <label for="schoolMotto" class="placeholder">School Motto</label>
+            </div>
+
+            <!-- School Logo Upload -->
+            <div class="form-group file-input">
+                <input type="file" id="schoolLogo" name="schoolLogo" accept="image/*" required>
+                <label for="schoolLogo" class="file-label">Upload School Logo</label>
+                <span id="file-chosen">No file chosen</span>
+            </div>
+
+            <!-- Full Name -->
+            <div class="form-group">
+                <input type="text" id="fullName" name="fullName" required>
+                <label for="fullName" class="placeholder">Your Full Name</label>
+            </div>
+
+            <!-- Email -->
+            <div class="form-group">
+                <input type="email" id="email" name="email" required>
+                <label for="email" class="placeholder">Your Email</label>
+            </div>
+
+            <!-- Password -->
+            <div class="form-group">
+                <input type="password" id="password" name="password" required>
+                <label for="password" class="placeholder">Password</label>
+                <div class="password-strength" id="passwordStrength"></div>
+            </div>
+
+            <!-- Confirm Password -->
+            <div class="form-group">
+                <input type="password" id="confirmPassword" name="confirmPassword" required>
+                <label for="confirmPassword" class="placeholder">Confirm Password</label>
+                <p class="error-message" id="confirmPasswordError"></p>
+            </div>
+
+            <!-- Role Selection -->
+            <div class="form-group">
+                <select id="role" name="role" required>
+                    <option value="" disabled selected>Select Role</option>
+                    <option value="student">Student</option>
+                    <option value="teacher">Teacher</option>
+                    <option value="admin">Admin</option>
+                </select>
+            </div>
+            
+            <!-- Submit Button -->
+            <button type="submit">Sign Up</button>
+            <p class="error-message" id="formError"></p>
+            
+            <!-- Footer Links -->
+            <div class="footer">
+                <p>Already have an account? <a href="#">Login here</a></p>
+            </div>
+        </form>
+    </div>
+    
+    <script src="index.js"></script>
+</body>
+</html>

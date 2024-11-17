@@ -1,0 +1,317 @@
+* {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    
+    
+}
+
+body{
+    
+    height: 100vh;
+    width: 100dvw;
+    box-sizing: border-box;
+    
+    
+}
+
+.header {
+    position: fixed;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 15px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+#login {
+    margin-left: auto;
+    margin-right: 10px;
+    list-style: none;
+    color: #10B387;
+    font-size: 20px;
+    transition: 0.1s ease-in;
+}
+
+#login:hover {
+    cursor: pointer;
+    color: #D8A31A;
+    
+}
+
+nav ul {
+    display: flex;
+    margin-right: auto;
+    padding-left: 5% ;
+}
+
+nav ul li {
+    list-style: none;
+    margin: 10px;
+    font-size: 16px;
+    color: #8E959B;
+    cursor: pointer;
+    transition: 0.2s ease-in;
+    
+}
+
+nav ul li:hover {
+    color: #D8A31A;
+}
+
+nav button {
+    background-color: #10B387;
+    color: white;
+    font-size: 15px;
+    border-radius: 10px;
+    border: none;
+    outline: 0;
+    padding: 15px 10px;
+    margin-right: 5px;
+    transition: 0.5s ease-in;
+}
+
+nav button:hover {
+    cursor: pointer;
+    color: #D8A31A;
+    border-radius: 40px;
+}
+.ham{
+    display: none;
+}
+.side-drawer {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    height: 100%;
+    width: 100%;
+    background-color: white;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    transition: right 0.3s ease;
+    z-index: 20;
+    
+   
+}
+#nav-links{
+    padding-left: 10%;
+}
+.side-drawer ul{
+    margin-top: 20%;
+    margin-right: 5%;
+}
+.side-drawer ul li{
+    list-style: none;
+    color: #8E959B;
+    
+    
+}
+.side-drawer ul li:hover{
+    color: #D8A31A;
+    text-decoration: none;
+    user-select: none;
+
+    
+
+}
+.side-drawer li{
+    list-style: none;
+    user-select: none;
+    align-self: center;
+    color: #10B387;
+
+}
+.side-drawer li:hover{
+    color: #D8A31A;
+
+}
+.side-drawer li {
+    margin: 15px 0;
+    font-size: 1.2rem;
+}
+#log{
+    padding-top: 10%;
+    font-size: 25px;
+}
+#button{
+    margin-top: 30%;
+    padding: 5%;
+    margin-left: 3%;
+    margin-right: 3%;
+    border-radius: 15px;
+    background-color:#10B387;
+    color: white;
+    font-size: 25px;
+    transition: 0.3s ease-in-out;
+}
+#button:hover{
+    color:#D8A31A;
+    border-radius: 30px;
+}
+.cl{
+    display: flex;
+    justify-content: flex-end;
+    padding: 2%;
+    
+    
+
+}
+#close{
+    font-size: 25px;
+    color: red;
+    
+    padding: 3%;
+    font-weight: bold;
+    user-select: none;
+  
+}
+#close:hover{
+    font-size: 30px;
+}
+
+.active {
+    right: 0;
+}
+.inactive{
+    right: -100%
+}
+.hero {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 5% 15%;
+}
+
+.hero h1 {
+    font-size: 40px;
+    text-align: center;
+    padding: 2%;
+}
+
+.hero p {
+    color: #8E959B;
+}
+.ai{
+    color: #D8A31A;
+}
+.demo{
+    color: #10B387;
+}
+.demo:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+/* Pricing Container */
+.pricing-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Pricing Card */
+.pricing-card {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    width: 280px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.pricing-card:hover {
+    transform: scale(1.05);
+}
+
+.pricing-card h2 {
+    font-size: 1.5em;
+    color: #333;
+}
+
+.price {
+    font-size: 2.5em;
+    color: #007bff;
+    margin: 10px 0;
+}
+
+.price span {
+    font-size: 0.5em;
+    color: #888;
+}
+
+.features {
+    list-style-type: none;
+    padding: 0;
+}
+
+.features li {
+    padding: 8px 0;
+    border-top: 1px solid #ddd;
+}
+
+.features li:first-child {
+    border-top: none;
+}
+
+.btn-select {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    color: #fff;
+    background-color:#D8A31A;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.btn-select:hover {
+    background-color:#10B387;
+}
+.copy{
+    text-align: center;
+    color:  #B9C2C9;
+    background-color: #70530a;
+}
+@media (min-width: 800px) {
+    .ham{
+        display: none;
+    } 
+    
+}
+@media (max-width: 800px) {
+    .ham {
+        display: block;
+        font-size: 24px;
+        margin-right: 10px;
+    }
+
+    .side-drawer {
+        width: 100%;
+    }
+
+    .hero h1 {
+        margin-top: 15%;
+        font-size: 2rem;
+    }
+
+    .hero button {
+        font-size: 20px;
+        padding: 10px;
+    }
+
+    nav ul {
+        display: none;
+    }
+
+    nav button {
+        display: none;
+    }
+}

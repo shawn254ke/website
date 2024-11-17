@@ -1,0 +1,375 @@
+* {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    
+    
+    
+}
+
+body{
+    
+    height: 100vh;
+    width: 100dvw;
+    box-sizing: border-box;
+   
+    
+}
+
+.header {
+    position: fixed;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 15px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+#login {
+    margin-left: auto;
+    margin-right: 10px;
+    list-style: none;
+    color: #10B387;
+    font-size: 20px;
+    transition: 0.1s ease-in;
+}
+
+#login:hover {
+    cursor: pointer;
+    color: #D8A31A;
+    
+}
+
+nav ul {
+    display: flex;
+    margin-right: auto;
+    padding-left: 5% ;
+}
+
+nav ul li {
+    list-style: none;
+    margin: 10px;
+    font-size: 16px;
+    color: #8E959B;
+    cursor: pointer;
+    transition: 0.2s ease-in;
+    
+}
+
+nav ul li:hover {
+    color: #D8A31A;
+}
+
+nav button {
+    background-color: #10B387;
+    color: white;
+    font-size: 15px;
+    border-radius: 10px;
+    border: none;
+    outline: 0;
+    padding: 15px 10px;
+    margin-right: 5px;
+    transition: 0.5s ease-in;
+}
+
+nav button:hover {
+    cursor: pointer;
+    color: #D8A31A;
+    border-radius: 40px;
+}
+.hero {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 3% 15%;
+}
+
+.hero h1 {
+    font-size: 6rem;
+    text-align: center;
+    padding: 6%;
+}
+
+.hero p {
+    color: #8E959B;
+    font-family: century gothic;
+    font-weight: bold;
+}
+
+.hero button {
+    background-color: #D8A31A;
+    color: white;
+    font-size: 30px;
+    border-radius: 12px;
+    padding: 2%;
+    margin: 2%;
+    border: none;
+    transition: 0.3s ease-in;
+}
+
+.hero button:hover {
+    border-radius: 40px;
+    color: #10B387;
+    cursor: pointer;
+}
+.ham{
+    display: none;
+}
+.side-drawer {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    height: 100%;
+    width: 100%;
+    background-color: white;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    transition: right 0.3s ease;
+    z-index: 20;
+    
+   
+}
+#nav-links{
+    padding-left: 10%;
+}
+.side-drawer ul{
+    margin-top: 20%;
+    margin-right: 5%;
+}
+.side-drawer ul li{
+    list-style: none;
+    color: #8E959B;
+    
+    
+}
+.side-drawer ul li:hover{
+    color: #D8A31A;
+    text-decoration: none;
+    user-select: none;
+
+    
+
+}
+.side-drawer li{
+    list-style: none;
+    user-select: none;
+    align-self: center;
+    color: #10B387;
+
+}
+.side-drawer li:hover{
+    color: #D8A31A;
+
+}.side-drawer li {
+    margin: 15px 0;
+    font-size: 1.2rem;
+}
+#log{
+    padding-top: 10%;
+    font-size: 25px;
+}
+#button{
+    margin-top: 30%;
+    padding: 5%;
+    margin-left: 3%;
+    margin-right: 3%;
+    border-radius: 15px;
+    background-color:#10B387;
+    color: white;
+    font-size: 25px;
+    transition: 0.3s ease-in-out;
+}
+#button:hover{
+    color:#D8A31A;
+    border-radius: 30px;
+}
+#lb{
+    border-bottom: 1px solid #8E959B;
+    padding-bottom: 3%;
+}
+.cl{
+    display: flex;
+    justify-content: flex-end;
+    padding: 2%;
+    
+    
+
+}
+#close{
+    font-size: 25px;
+    color: red;
+    
+    padding: 3%;
+    font-weight: bold;
+    user-select: none;
+  
+}
+#close:hover{
+    font-size: 30px;
+}
+
+.active {
+    right: 0;
+}
+.inactive{
+    right: -100%
+}
+.vision {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: #F8F9FA;
+    height: 100vh;
+    padding: 2%;
+
+}
+
+.visionup{
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+.visionup h2{
+    font-size: 2em;
+}
+.visiondown{
+    display: grid;
+    grid-template-columns: repeat(2 , 1fr);
+}
+.contacts{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-color: #85620a;
+}
+.emails{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5%;
+    background-color: white;
+    height: 60%;
+}
+.emails p:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+.l{
+    display: flex;
+    justify-content: flex-end;
+    padding: 5%;
+    color: white;
+    height: 40%;
+    
+}
+.l div{
+    padding: 2%;
+
+}
+.l p:hover{
+    text-decoration: underline;
+    cursor: pointer;
+    user-select: none;
+}
+.copy{
+    text-align: center;
+    color:  #B9C2C9;
+    background-color: #70530a;
+}
+@media (min-width: 800px) {
+    .ham{
+        display: none;
+    } 
+    
+}
+@media (max-width: 800px) {
+    .ham {
+        display: block;
+        font-size: 24px;
+        margin-right: 10px;
+    }
+
+    .side-drawer {
+        width: 100%;
+    }
+
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero button {
+        font-size: 20px;
+        padding: 10px;
+    }
+
+    nav ul {
+        display: none;
+    }
+
+    nav button {
+        display: none;
+    }
+
+    .visiondown {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .pricing-container {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .pricing-card {
+        width: 90%;
+        margin: 10px auto;
+    }
+}
+
+@media (max-width: 500px) {
+    .hero h1 {
+        font-size: 50px;
+        padding-top: 15%;
+        
+    }
+    .hero p{
+        font-size: 17px;
+    }
+    .hero button{
+        font-size: 30px;
+        padding: 8%;
+        margin-top: 25%;
+        margin-bottom: 25%;
+
+    }
+
+    #button {
+        font-size: 18px;
+    }
+    .vision{
+        display: block;
+
+    }
+    .visionup{
+        display: flex;
+        flex-direction: column;
+    }
+    .visiondown{
+        display: none;
+    }
+    .emails{
+        display: flex;
+        flex-direction: column;
+    }
+    .visionlogo{
+    width: 390px;
+    }
+    
+
+    
+}
